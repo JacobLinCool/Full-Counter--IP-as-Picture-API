@@ -1,5 +1,12 @@
 # Full Counter: IP as Picture API
-IPAPAPI
+**IPAPAPI** 😃
+
+1.  [**Endpoint**](#endpoint)
+2.  [**Parameters**](#parameters)
+3.  [**Privacy Policy**](#privacy-policy)
+4.  [**Deploy By Yourself**](#deploy-by-yourself)
+5.  [**That's Not My IP!**](#thats-not-my-ip)
+6.  [**License**](#license)
 
 ## Endpoint
 ```md
@@ -102,6 +109,111 @@ https://fc.jacob.workers.dev/?font=rampart
 
 ![EXAMPLE](https://fc.jacob.workers.dev/?font=rampart)
 
-#### More Fonts?
-Please Request by Creating Issue.
+#### pacifico
+```md
+https://fc.jacob.workers.dev/?font=pacifico
+```
 
+![EXAMPLE](https://fc.jacob.workers.dev/?font=pacifico)
+
+#### rajdhani
+```md
+https://fc.jacob.workers.dev/?font=rajdhani
+```
+
+![EXAMPLE](https://fc.jacob.workers.dev/?font=rajdhani)
+
+#### patrick
+```md
+https://fc.jacob.workers.dev/?font=patrick
+```
+
+![EXAMPLE](https://fc.jacob.workers.dev/?font=patrick)
+
+#### damion
+```md
+https://fc.jacob.workers.dev/?font=damion
+```
+
+![EXAMPLE](https://fc.jacob.workers.dev/?font=damion)
+
+#### windsong
+```md
+https://fc.jacob.workers.dev/?font=windsong
+```
+
+![EXAMPLE](https://fc.jacob.workers.dev/?font=windsong)
+
+#### fredericka
+```md
+https://fc.jacob.workers.dev/?font=fredericka
+```
+
+![EXAMPLE](https://fc.jacob.workers.dev/?font=fredericka)
+
+#### geo
+```md
+https://fc.jacob.workers.dev/?font=geo
+```
+
+![EXAMPLE](https://fc.jacob.workers.dev/?font=geo)
+
+#### gaegu
+```md
+https://fc.jacob.workers.dev/?font=gaegu
+```
+
+![EXAMPLE](https://fc.jacob.workers.dev/?font=gaegu)
+
+#### paprika
+```md
+https://fc.jacob.workers.dev/?font=paprika
+```
+
+![EXAMPLE](https://fc.jacob.workers.dev/?font=paprika)
+
+#### reggae
+```md
+https://fc.jacob.workers.dev/?font=reggae
+```
+
+![EXAMPLE](https://fc.jacob.workers.dev/?font=reggae)
+
+#### milonga
+```md
+https://fc.jacob.workers.dev/?font=milonga
+```
+
+![EXAMPLE](https://fc.jacob.workers.dev/?font=milonga)
+
+#### ruthie
+```md
+https://fc.jacob.workers.dev/?font=ruthie
+```
+
+![EXAMPLE](https://fc.jacob.workers.dev/?font=ruthie)
+
+#### More Fonts?
+Please Request by Creating Issue or PR.
+
+## Privacy Policy
+**This API should not store any data.** 
+
+Your IP address is not stored. It is only used to generate the picture.
+
+## Deploy By Yourself
+It is possible to deploy this API to your own server or any serverless platform.
+
+> To deploy the API on Cloudflare Worker, you can [`fork`](https://github.com/JacobLinCool/Full-Counter--IP-as-Picture-API/fork) this repository, add your Cloudflare API Token (name it `CF_API_TOKEN`) to `Repository Secret`, and run the `Deploy Worker` GitHub Action.
+
+You can also use the code in `dist/worker.js`, which is already packed by webpack.
+
+## That's Not My IP!
+If the IP address is not yours, it may be because you are using a proxy or VPN.
+
+AND, it **cannot** be use on GitHub README because GitHub requests the pictures from their server, not from your IP. (So it actually shows the IP address of GitHub's server.)
+
+## License
+MIT LICENSE
+
+Check the [LICENSE](https://github.com/JacobLinCool/Full-Counter--IP-as-Picture-API/blob/main/LICENSE) file.

@@ -1,4 +1,4 @@
-name: Deploy
+name: Deploy Worker
 
 on:
   # push:
@@ -8,7 +8,7 @@ on:
 
 jobs:
   deploy:
-    name: Deploy
+    name: Deploy Worker
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
