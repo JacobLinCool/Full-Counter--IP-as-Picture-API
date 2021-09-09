@@ -16,6 +16,7 @@ router.all("*", async (request) => {
         size: +(query.size || query.s || 20),
         width: +(query.width || query.w || 140),
         height: +(query.height || query.h || 60),
+        radius: +(query.radius || query.r || 0),
         color: "#" + (query.color || query.c || "2E3440"),
         background: "#" + (query.background || query.b || "ECEFF4"),
     };

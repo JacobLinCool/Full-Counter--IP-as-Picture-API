@@ -1,6 +1,6 @@
 import fonts from "./fonts";
 
-function create({ ip, font, size, width, height, color, background }) {
+function create({ ip, font, size, width, height, radius, color, background }) {
     let fontCss = fonts[font],
         fontFamily = font;
     if (!fontCss || !fontFamily) {
@@ -12,6 +12,9 @@ function create({ ip, font, size, width, height, color, background }) {
     // add style
     product += `<style>
         ${fontCss}
+        svg {
+            border-radius: ${radius}px;
+        }
         #ip {
             font-family: ${fontFamily};
             font-size: ${size}px;
@@ -21,8 +24,8 @@ function create({ ip, font, size, width, height, color, background }) {
         }
     </style>`;
     // add background rect
-    product += `<rect x="0" y="0" width="${width}" height="${height}" fill="${background}"/>`;
-    product += `<text id="ip" x="${width / 2}" y="${height / 2}" font-family="${font}" font-size="${height}" fill="#000">${ip}</text>`;
+    product += `<rect x="0" y="0" width="${width}" height="${height}" rx="${radius}" ry="${radius}" fill="${background}"/>`;
+    product += `<text id="ip" x="${width / 2}" y="${height / 2}">${ip}</text>`;
     product += "</svg>";
     return product;
 }
